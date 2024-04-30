@@ -27,6 +27,7 @@ def download_audio_from_youtube(command: str):
         print("Cannot get ytb url for download")
         return
 
+    print("Downloading video from yt....")
     yt: YouTube = YouTube(get_ytb_url(command))
     audio_stream: Stream = yt.streams.filter(only_audio=True).first()  # Choose best audio
 
@@ -34,6 +35,7 @@ def download_audio_from_youtube(command: str):
     media_path: str = get_media_path()
 
     audio_stream.download(output_path=media_path, filename=file_name)
+    print("Downloaded video from yt")
 
 
 def get_file_name(cmd: str) -> str:

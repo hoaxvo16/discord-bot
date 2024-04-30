@@ -44,4 +44,19 @@ async def gayban(ctx: Context):
     await play_audio(ctx)
 
 
+@bot.command(pass_context=True)
+async def locc(ctx: Context):
+    await play_audio(ctx)
+
+
+@bot.command(pass_context=True)
+async def dmcuocdoi(ctx: Context):
+    await play_audio(ctx)
+
+
+@bot.command(pass_context=True)
+async def anhemcc(ctx: Context):
+    await play_audio(ctx)
+
+
 bot.run(token=TOKEN)
