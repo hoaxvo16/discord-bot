@@ -6,7 +6,7 @@ from discord.ext.commands import Bot, Context
 from dotenv import load_dotenv
 from typing import Final
 
-from event_handler import play_audio
+from event_handler import play_audio, get_list_command_available_from_resource, play_from_resource
 from logger import log_command
 
 load_dotenv()
@@ -30,6 +30,7 @@ async def join(ctx: Context):
     log_command(ctx)
     voice_channel: VoiceChannel = ctx.author.voice.channel
     await voice_channel.connect()
+    await get_list_command_available_from_resource()
 
 
 @bot.command(pass_context=True)

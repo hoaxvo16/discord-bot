@@ -1,5 +1,4 @@
 import os
-
 from discord import VoiceProtocol, FFmpegPCMAudio
 from discord.ext.commands import Context
 from pytube import YouTube, Stream
@@ -52,3 +51,24 @@ def get_media_path() -> str:
 
 def get_ytb_url(cmd: str) -> str | None:
     return command_config.get(cmd)
+
+
+async def play_from_resource(ctx: Context):
+    log_command(ctx)
+    voice_client: VoiceProtocol = ctx.voice_client
+    if not voice_client:
+        await ctx.send("**I am not connected to a voice channel!**")
+        return
+
+    source: FFmpegPCMAudio = FFmpegPCMAudio(executable="C:\\ffmpeg\\bin\\ffmpeg.exe", source=f'resource/{ctx.command}.mp3')
+    voice_client.volume = 80
+    voice_client.play(source)
+
+
+async def get_list_command_available_from_resource(ctx: Context):
+    files_name = os.listdir('resource')
+    list_commands = ['!' + item.replace('.mp3', '') for item in files_name]
+    await ctx.send("List Commands Available:")
+    for command in list_commands:
+        await ctx.send(command)
+    await ctx.send('==============END==========')
