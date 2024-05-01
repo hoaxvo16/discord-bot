@@ -59,5 +59,48 @@ async def dmcuocdoi(ctx: Context):
 async def anhemcc(ctx: Context):
     await play_audio(ctx)
 
+@bot.command()
+async def next_level(ctx: Context):
+    await play_from_resource(ctx)
+
+@bot.command()
+async def oy(ctx: Context):
+    await play_from_resource(ctx)
+
+@bot.command()
+async def chana(ctx: Context):
+    await play_from_resource(ctx)
+
+@bot.command()
+async def ua(ctx: Context):
+    await play_from_resource(ctx)
+
+@bot.command()
+async def cuutui(ctx: Context):
+    await play_from_resource(ctx)
+
+@bot.command()
+async def yamate(ctx: Context):
+    await play_from_resource(ctx)
+
+@bot.command()
+async def ghechua(ctx: Context):
+    await play_from_resource(ctx)
+@bot.command()
+async def dmdoi(ctx: Context):
+    await play_from_resource(ctx)
+
+@bot.command()
+async def baymuoi(ctx: Context):
+    await play_from_resource(ctx)
+
+@bot.command()
+async def fb(ctx: Context):
+    await play_from_resource(ctx)
+
+@bot.command()
+async def dbk(ctx: Context):
+    await play_from_resource(ctx)
+
 
 bot.run(token=TOKEN)
