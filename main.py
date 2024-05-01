@@ -129,4 +129,9 @@ async def dbk(ctx: Context) -> None:
     await play_audio(ctx)
 
 
+@bot.command()
+async def dongu(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
 bot.run(token=TOKEN)
