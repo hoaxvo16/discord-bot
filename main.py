@@ -134,4 +134,24 @@ async def dongu(ctx: Context) -> None:
     await play_audio(ctx)
 
 
+@bot.command()
+async def immmom(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
+@bot.command()
+async def lauduv(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
+@bot.command()
+async def caijzbanoi(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
+@bot.command()
+async def bocphet(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
 bot.run(token=TOKEN)
