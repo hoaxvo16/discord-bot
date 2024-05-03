@@ -135,7 +135,7 @@ async def dongu(ctx: Context) -> None:
 
 
 @bot.command()
-async def immmom(ctx: Context) -> None:
+async def immom(ctx: Context) -> None:
     await play_audio(ctx)
 
 
@@ -151,6 +151,56 @@ async def caijzbanoi(ctx: Context) -> None:
 
 @bot.command()
 async def bocphet(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
+@bot.command()
+async def cutrangoai(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
+@bot.command()
+async def kinhroi(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
+@bot.command()
+async def muoidiem(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
+@bot.command()
+async def bruh(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
+@bot.command()
+async def chuithecc(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
+@bot.command()
+async def kochuithe(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
+@bot.command()
+async def toicongchuyen(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
+@bot.command()
+async def vinhbietcu(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
+@bot.command()
+async def xoso(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
+@bot.command()
+async def devl(ctx: Context) -> None:
     await play_audio(ctx)
 
 
