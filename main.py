@@ -259,4 +259,24 @@ async def nani(ctx: Context) -> None:
     await play_audio(ctx)
 
 
+@bot.command()
+async def dripgoku(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
+@bot.command()
+async def chetchiroi(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
+@bot.command()
+async def sad(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
+@bot.command()
+async def oww(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
 bot.run(token=TOKEN)
