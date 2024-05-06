@@ -203,5 +203,20 @@ async def xoso(ctx: Context) -> None:
 async def devl(ctx: Context) -> None:
     await play_audio(ctx)
 
+@bot.command()
+async def noob(ctx: Context) -> None:
+    await play_audio(ctx)
+
+@bot.command()
+async def laka(ctx: Context) -> None:
+    await play_audio(ctx)
+
+@bot.command()
+async def spicy(ctx: Context) -> None:
+    await play_audio(ctx)
+
+@bot.command()
+async def wan_bu_liao_la(ctx: Context) -> None:
+    await play_audio(ctx)
 
 bot.run(token=TOKEN)
