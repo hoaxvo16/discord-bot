@@ -10,9 +10,6 @@ async def play_audio(ctx: Context) -> None:
     log_command(ctx)
     command: str = ctx.command.name
     voice_client: VoiceProtocol = ctx.voice_client
-    if voice_client is None:
-        await ctx.send("**I am not connected to a voice channel!**")
-        return
     file_path: str = get_file_path(command)
     if os.path.isfile(file_path):
         source: FFmpegPCMAudio = FFmpegPCMAudio(executable="C:\\ffmpeg\\bin\\ffmpeg.exe", source=file_path)
