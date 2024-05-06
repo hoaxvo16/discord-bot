@@ -203,20 +203,60 @@ async def xoso(ctx: Context) -> None:
 async def devl(ctx: Context) -> None:
     await play_audio(ctx)
 
+
 @bot.command()
 async def noob(ctx: Context) -> None:
     await play_audio(ctx)
+
 
 @bot.command()
 async def laka(ctx: Context) -> None:
     await play_audio(ctx)
 
+
 @bot.command()
 async def spicy(ctx: Context) -> None:
     await play_audio(ctx)
 
+
 @bot.command()
 async def wan_bu_liao_la(ctx: Context) -> None:
     await play_audio(ctx)
+
+
+@bot.command()
+async def huh(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
+@bot.command()
+async def kinhchao(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
+@bot.command()
+async def khoc(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
+@bot.command()
+async def su(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
+@bot.command()
+async def uhh(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
+@bot.command()
+async def coconcac(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
+@bot.command()
+async def nani(ctx: Context) -> None:
+    await play_audio(ctx)
+
 
 bot.run(token=TOKEN)
