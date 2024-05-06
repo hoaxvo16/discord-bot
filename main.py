@@ -279,4 +279,24 @@ async def oww(ctx: Context) -> None:
     await play_audio(ctx)
 
 
+@bot.command()
+async def why_not_mtf(ctx: Context) -> None:
+    await play_audio(ctx)
+
+@bot.command()
+async def non(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
+@bot.command()
+async def cayko(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
+@bot.command()
+async def chao_dai_ca(ctx: Context) -> None:
+    await play_audio(ctx)
+
+
+
 bot.run(token=TOKEN)
